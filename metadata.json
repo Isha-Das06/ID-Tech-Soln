@@ -1,0 +1,8 @@
+{
+  "name": "ID Tech - Intelligent Solutions",
+  "description": "An immersive, high-performance ID Tech business landing page showcasing industrial innovation and human-centric technology solutions.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ]
+}

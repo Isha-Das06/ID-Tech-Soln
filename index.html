@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Tech | Intelligent Solutions for Humanity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A1E3F;
+            color: white;
+            margin: 0;
+            overflow-x: hidden;
+            cursor: none;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #00D6FF #0A1E3F;
+        }
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0A1E3F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00D6FF;
+            border-radius: 10px;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(0, 214, 255, 0.5);
+        }
+        .neon-border {
+            border: 1px solid rgba(0, 214, 255, 0.3);
+            box-shadow: 0 0 15px rgba(0, 214, 255, 0.1);
+        }
+        .neon-border:hover {
+            border-color: #00D6FF;
+            box-shadow: 0 0 20px rgba(0, 214, 255, 0.3);
+        }
+        @keyframes pulse-cyan {
+            0% { box-shadow: 0 0 0 0 rgba(0, 214, 255, 0.4); }
+            70% { box-shadow: 0 0 0 20px rgba(0, 214, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 214, 255, 0); }
+        }
+        .pulse-effect {
+            animation: pulse-cyan 2s infinite;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
