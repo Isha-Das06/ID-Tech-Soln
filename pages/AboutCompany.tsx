@@ -159,51 +159,6 @@ const AboutCompany: React.FC = () => {
         </div>
       </section>
 
-      {/* NEW SECTION 4 — Our Evolution Timeline */}
-      <section className="py-32 bg-[#0A1E3F] relative overflow-hidden">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-end justify-between mb-24 gap-8">
-            <div className="max-w-xl">
-              <span className="text-[#00D6FF] font-bold text-xs uppercase tracking-[0.4em] mb-4 block">The Journey</span>
-              <h2 className="text-5xl font-bold mb-6">Our Evolution</h2>
-              <p className="text-slate-400 text-lg leading-relaxed">
-                From a small research lab to a global leader in intelligent industrial infrastructure.
-              </p>
-            </div>
-            <div className="w-16 h-16 bg-[#00D6FF]/10 rounded-full flex items-center justify-center text-[#00D6FF]">
-              <History size={32} />
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="absolute left-0 right-0 h-px bg-white/10 top-1/2 -translate-y-1/2 hidden md:block" />
-            <div className="grid md:grid-cols-4 gap-12 relative z-10">
-              {[
-                { year: '2019', title: 'Genesis', desc: 'ID Tech founded with the mission of ethical automation.' },
-                { year: '2021', title: 'Mesh Launch', desc: 'First deployment of the ID-Mesh at a major European port.' },
-                { year: '2023', title: 'Global 500', desc: 'Scaling to serve over 450 global enterprises across 4 continents.' },
-                { year: '2025', title: 'The Future', desc: 'Expanding our net-zero data clusters and social impact nodes.' }
-              ].map((m, i) => (
-                <motion.div 
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="bg-[#0D2B55]/30 p-8 rounded-3xl border border-white/5 relative group hover:border-[#00D6FF]/30 transition-all"
-                >
-                  <div className="absolute -top-4 left-8 px-4 py-1 bg-[#00D6FF] text-[#0A1E3F] font-bold rounded-lg text-sm shadow-[0_0_15px_rgba(0,214,255,0.4)]">
-                    {m.year}
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 mt-2">{m.title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{m.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* NEW SECTION 5 — The Ethical Code */}
       <section className="py-32 bg-[#0D2B55]/20 relative">
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">

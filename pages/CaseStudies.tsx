@@ -123,7 +123,7 @@ const CaseStudies: React.FC = () => {
 
             <div className="space-y-8">
               <div className="p-8 bg-[#0A1E3F] rounded-[32px] border border-white/5">
-                <h4 className="text-2xl font-bold mb-4 text-[#00D6FF]">8.4 Billion</h4>
+                <h4 className="text-2xl font-bold mb-4 text-[#00D6FF]">200k+</h4>
                 <p className="text-slate-400 text-sm">Industrial events processed annually through the ID Mesh framework.</p>
               </div>
               <div className="p-8 bg-[#0A1E3F] rounded-[32px] border border-white/5">

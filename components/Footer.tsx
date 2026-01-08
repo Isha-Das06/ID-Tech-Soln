@@ -17,9 +17,18 @@ const Footer: React.FC = () => {
               Empowering global industries through ethical AI and human-centric automation. Building the future, one connection at a time.
             </p>
             <div className="flex gap-4">
-              {[Facebook, Mail].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-[#00D6FF] hover:text-[#00D6FF] transition-all">
-                  <Icon size={18} />
+              {[
+                { icon: Facebook, href: 'https://web.facebook.com/IDTECHSOLUTIONS' },
+                { icon: Mail, href: 'mailto:isha@idtechsolutionsbd.com' }
+              ].map((item, i) => (
+                <a 
+                  key={i} 
+                  href={item.href}
+                  target={item.href.startsWith('http') ? '_blank' : '_self'}
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-[#00D6FF] hover:text-[#00D6FF] transition-all"
+                >
+                  <item.icon size={18} />
                 </a>
               ))}
             </div>
